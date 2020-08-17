@@ -1,0 +1,6 @@
+name: postgresql-client
+version: 1.0
+description: postgresql client 
+maintainers: 
+  - name: Can Sevilmis
+    email: csevilmis@avaya.com

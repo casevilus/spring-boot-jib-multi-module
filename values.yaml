@@ -1,0 +1,6 @@
+# Default values for chart
+deploy:
+  name: postgresql-client
+  replicas: 1
+  imageTag: "3.7"
+  imagePullPolicy: "Always"
