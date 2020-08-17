@@ -1,14 +1,14 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: ocr-docker
+  name:  {{ .Values.deploy.name }}
   labels:
-    name: ocr-docker
+    name:  {{ .Values.deploy.name }}
 spec:
   type: "{{.Values.service.type}}"
   ports:
   - name: http
-    port: {{.Values.service.port}}
+    port: 80
     targetPort: {{.Values.service.port}}
   selector:
-    app: ocr-docker
+    app: {{ .Values.deploy.name }}

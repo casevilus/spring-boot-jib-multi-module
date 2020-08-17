@@ -60,7 +60,7 @@ The output of the build should have the container image references highlighted i
 Apply to your Kubernetes cluster:
 
 ```shell
-kubectl apply -f kubernetes.yaml
+helm install 
 ```
 
 Find the `EXTERNAL-IP` of the `ixcc-demo-app`.

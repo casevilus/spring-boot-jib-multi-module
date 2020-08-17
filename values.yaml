@@ -1,6 +1,9 @@
 # Default values for chart
 deploy:
-  name: postgresql-client
+  name: ixcc-demo-app
+  image: "ixccmetam.azurecr.io/demo-ixcc-app"
   replicas: 1
-  imageTag: "3.7"
+  imageTag: "0.1"
   imagePullPolicy: "Always"
+service:
+  port: 9000

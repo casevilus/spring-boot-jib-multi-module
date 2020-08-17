@@ -1,21 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: "{{.Values.deploy.name}}"
+  name: {{.Values.deploy.name}}
 spec:
   replicas: {{ .Values.deploy.replicas }}
   selector:
     matchLabels:
-      app: postgresql-client
+      app: {{ .Values.deploy.name }}
   template:
     metadata:
       labels:
-        app: postgresql-client
+        app: {{ .Values.deploy.name }}
     spec:
       containers:
-        - image: "alpine:{{.Values.deploy.imageTag}}"
+        - image: "{{ .Values.deploy.image }}:{{ .Values.deploy.imageTag }}"
           imagePullPolicy: Always
-          name: postgresql-client
-          command: [ "/bin/sh", "-c", "--" ]
-          args: [ "while true; do sleep 30; done;" ]     
+          name: {{ .Values.deploy.name }}
       restartPolicy: Always

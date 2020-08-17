@@ -1,6 +1,5 @@
-name: postgresql-client
+name: ixcc-demo-app
 version: 1.0
-description: postgresql client 
+description: ixcc demo app
 maintainers: 
   - name: Can Sevilmis
-    email: csevilmis@avaya.com
