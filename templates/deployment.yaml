@@ -16,4 +16,11 @@ spec:
         - image: "{{ .Values.deploy.image }}:{{ .Values.deploy.imageTag }}"
           imagePullPolicy: Always
           name: {{ .Values.deploy.name }}
+          env:
+            - name: SERVER_PORT
+              value: {{ .Values.service.port }}
+            - name: MGMT_SERVER_PORT
+              value: {{ .Values.service.mgmt_port }}
+            - name: SERVER_ADDR
+              value: {{ .Values.service.server_addr }}
       restartPolicy: Always

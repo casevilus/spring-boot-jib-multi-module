@@ -7,3 +7,5 @@ deploy:
   imagePullPolicy: "Always"
 service:
   port: 9000
+  mgmt_port: 9001
+  server_addr: "127.0.0.1"
