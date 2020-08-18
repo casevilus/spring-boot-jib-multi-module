@@ -33,6 +33,7 @@ subprojects {
             dependency 'com.microsoft.azure:azure-storage:8.6.5'
             dependency 'com.azure:azure-storage-blob:12.8.0'
             dependency 'com.azure:azure-identity:1.1.0'
+            dependency 'org.springframework:spring-context:5.2.8.RELEASE'
 
 
         }
