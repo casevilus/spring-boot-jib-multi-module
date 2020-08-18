@@ -8,6 +8,10 @@ dependencies {
     compile'ch.qos.logback:logback-classic:1.2.3'
     compile 'ch.qos.logback:logback-core:1.2.3'
     compile 'org.slf4j:slf4j-api:1.7.30'
+    implementation 'com.microsoft.azure:azure'
+    implementation 'com.microsoft.azure:azure-storage'
+    implementation 'com.azure:azure-storage-blob'
+    implementation 'com.azure:azure-identity'
 
     implementation project(':common')
     implementation 'org.springframework.boot:spring-boot-starter-actuator'

@@ -29,6 +29,12 @@ subprojects {
             dependency'ch.qos.logback:logback-classic:1.2.3'
             dependency 'ch.qos.logback:logback-core:1.2.3'
             dependency 'org.slf4j:slf4j-api:1.7.25'
+            dependency 'com.microsoft.azure:azure:1.36.1'
+            dependency 'com.microsoft.azure:azure-storage:8.6.5'
+            dependency 'com.azure:azure-storage-blob:12.8.0'
+            dependency 'com.azure:azure-identity:1.1.0'
+
+
         }
     }
 
