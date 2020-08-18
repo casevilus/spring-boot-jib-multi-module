@@ -18,9 +18,9 @@ spec:
           name: {{ .Values.deploy.name }}
           env:
             - name: SERVER_PORT
-              value: {{ .Values.service.port }}
+              value: "{{ .Values.service.port }}"
             - name: MGMT_SERVER_PORT
-              value: {{ .Values.service.mgmt_port }}
+              value: "{{ .Values.service.mgmt_port }}"
             - name: SERVER_ADDR
-              value: {{ .Values.service.server_addr }}
+              value: "{{ .Values.service.server_addr }}"
       restartPolicy: Always
